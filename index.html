@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <fieldset>
+            <legend>Калькулятор</legend>
+            <div class="sum">
+                <label for="sum-credit">Сумма кредита</label>
+                <br>
+                <input type='number' id="sum-credit" value="100000">
+                <br>
+                <input type="range" id="sum-range" min="10000" max="2000000" step="10000" value="100000">
+            </div>
+            <div class="years">
+                <label for="term-credit">Cрок кредитования</label>
+                <br>
+                <input type='number' id="term-credit" value="3">
+                <br>
+                <input type="range" id="term-range" min="3" max="30" step="1" value="3">
+            </div>
+            <div class="rate">
+                <label for="rate-credit">Cтавка кредитования</label>
+                <br>
+                <input type='number' id="rate-credit" value="3">
+                <br>
+                <input type="range" id="rate-range" min="3" max="30" step="1" value="3">
+            </div>
+             <table>
+                <tr>
+                    <td>Ежемесячный платеж</td>
+                    <td id="monthly-payment"></td>
+                </tr>
+                <tr>
+                    <td>Переплата по кредиту</td>
+                    <td id="overpayment"></td>
+                </tr>
+                <tr>
+                    <td>Полная стоимость кредита</td>
+                    <td id="fullcredit"></td>
+                </tr>
+             </table>
+        </fieldset>
+        <fieldset class="shedule-table">
+               <legend>
+                График платежей
+               </legend>
+                <table id="shedule-payment">
+                </table>
+        </fieldset>
+    </div>
+
+</body>
+<script>
+        // if ("serviceWorker" in navigator) {
+        //     window.addEventListener("load", () => {
+        //         navigator.serviceWorker
+        //             .register("service-worker.js")
+        //             .then((registration) => {
+        //                 console.log("Service Worker registered: ", registration);
+        //             })
+        //             .catch((registrationError) => {
+        //                 console.error("Service Worker registration failed: ", registrationError);
+        //             });
+        //     });
+        // }
+</script>
+
+</html>
